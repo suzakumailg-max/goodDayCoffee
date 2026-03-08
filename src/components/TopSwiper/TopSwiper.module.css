@@ -1,0 +1,58 @@
+/* src/components/TopSwiper/TopSwiper.module.css */
+.inner {
+    max-width: 1396px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slideImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 480px未満：左右32pxチラ見せ（横スクロール防止） */
+.mobilePeek {
+    padding: 0 32px;
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
+/* Swiper自体ははみ出し表示OK（外側でclip/hiddenしてページ幅は増やさない） */
+.mobilePeek :global(.swiper) {
+    overflow: visible;
+    width: 100%;
+}
+
+.mobilePeek :global(.swiper-slide) {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    /* 高さ固定 */
+    .inner {
+        height: 428px;
+    }
+
+    .inner :global(.swiper) {
+        height: 428px;
+    }
+
+    .inner :global(.swiper-slide) {
+        height: 428px;
+    }
+
+    /* ✅ SP：スライド幅を「コンテナ幅 - (左右padding 32px×2)」に固定 → 375pxでも左右均等 */
+    .mobilePeek :global(.swiper-slide) {
+        width: calc(100% - 64px);
+    }
+
+    /* 画像を高さに追従させる */
+    .slideImg {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

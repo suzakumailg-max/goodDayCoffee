@@ -1,0 +1,30 @@
+.wrapper {
+    max-width: 1396px;
+    width: 85%;
+    margin-inline: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    height: auto;
+}
+
+.box {
+    border: 1px solid var(--textColor);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.textBox {
+    padding: 40px;
+}
+
+.cardHeading {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 43px;
+    margin-bottom: 30px;
+}

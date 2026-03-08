@@ -1,0 +1,17 @@
+.textNomal {
+    font-family: "Crimson Text", serif;
+    line-height: 1;
+    margin: 0;
+}
+
+.staffName {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.caption {
+    font-weight: bold;
+    margin-bottom: 17px;
+}

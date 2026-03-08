@@ -1,0 +1,128 @@
+.aside {
+    background-color: var(--subColor);
+    margin-block-start: 150px;
+}
+
+.inner {
+    max-width: 1396px;
+    width: 85%;
+    margin-inline: auto;
+    display: flex;
+
+    @media (width <= 700px) {
+        display: block;
+    }
+}
+
+.section {
+    flex: 1;
+    flex-basis: 50%;
+    position: relative;
+    padding-bottom: 130px;
+}
+
+.snsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.contactList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactList li {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 10px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.contactList li:not(:last-child) {
+    border-right: 1px solid var(--textColor);
+    font-size: 30px;
+}
+
+.contactList .contactLink {
+    text-decoration: none;
+    color: var(--textColor);
+    position: relative;
+}
+
+.contactList .contactLink:after {
+    content: "";
+    display: block;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    width: 1em;
+    height: 0.5em;
+    position: absolute;
+    right: -20px;
+    top: 20%;
+    transform: skewX(45deg);
+    transition: 0.4s;
+}
+
+.contactList .contactLink:hover:after {
+    right: -30px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 270px;
+    font-size: 32px;
+}
+
+.snsList li {
+    list-style: none;
+}
+
+.snsList li img {
+    width: 24px;
+    height: 24px;
+}
+
+.snsList li:not(:last-child) {
+    border-right: 1px solid var(--textColor);
+}
+
+.snsLink {
+    width: 148px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner .section:first-child::before {
+    content: "";
+    width: 1px;
+    height: 80%;
+    background-color: var(--textColor);
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+.test {
+    content: "";
+    display: block;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    width: 1em;
+    height: 0.5em;
+    position: absolute;
+    right: -1.2em;
+    top: 20%;
+    transform: skewX(45deg);
+    transition: 0.4s;
+}

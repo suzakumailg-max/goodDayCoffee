@@ -1,0 +1,16 @@
+.catchCopyBox {
+    text-align: center;
+    padding-block: 100px;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--textColor);
+    margin-block-end: 30px;
+}
+
+.text {
+    font-size: 20px;
+    color: var(--textColor);
+}

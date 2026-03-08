@@ -1,0 +1,25 @@
+.wrapper {
+    max-width: 1396px;
+    width: 85%;
+    margin-inline: auto;
+    padding-bottom: 150px;
+}
+
+.heading {
+    font-family: "Crimson Pro", serif;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+.image,
+.textBox {
+    flex-basis: 50%;
+}
